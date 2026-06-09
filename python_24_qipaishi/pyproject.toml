@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-24-qipaishi"
+version = "0.1.0"
+description = "FastAPI backend for the 24H unattended chess room system."
+requires-python = ">=3.9"
+dependencies = [
+  "alembic>=1.13.2",
+  "asyncpg>=0.29.0",
+  "fastapi>=0.115.0",
+  "python-json-logger>=2.0.7",
+  "redis>=5.0.7",
+  "SQLAlchemy[asyncio]>=2.0.30",
+  "uvicorn[standard]>=0.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "aiosqlite>=0.20.0",
+  "httpx>=0.27.0",
+  "mypy>=1.10.0",
+  "pytest>=8.2.0",
+  "pytest-asyncio>=0.23.0",
+  "ruff>=0.5.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "UP"]
+ignore = ["B008"]
+
+[tool.ruff.lint.per-file-ignores]
+"app/db/migrations/versions/*.py" = ["E501"]
+"tests/conftest.py" = ["E402"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true

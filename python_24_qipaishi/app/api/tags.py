@@ -1,0 +1,17 @@
+OPENAPI_TAGS = [
+    {"name": "health", "description": "Service health and dependency checks."},
+    {"name": "meta", "description": "Version and OpenAPI metadata."},
+    {"name": "auth", "description": "Login, token, and identity APIs."},
+    {"name": "tenancy", "description": "Tenant and application bindings."},
+    {"name": "stores", "description": "Store profile and operating settings."},
+    {"name": "rooms", "description": "Room profile, price rules, and blocked slots."},
+    {"name": "availability", "description": "Room availability and time conflict checks."},
+    {"name": "pricing", "description": "Booking price quote APIs."},
+    {"name": "orders", "description": "Booking, order, renewal, and room change APIs."},
+    {"name": "payments", "description": "Payment, refund, and callback APIs."},
+    {"name": "devices", "description": "Device control and command audit APIs."},
+    {"name": "cleaning", "description": "Cleaning task workflow APIs."},
+    {"name": "analytics", "description": "Operations analytics APIs."},
+    {"name": "members", "description": "Member operations and consumption APIs."},
+    {"name": "audit", "description": "High-risk operation audit APIs."},
+]

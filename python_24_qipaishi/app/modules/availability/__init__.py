@@ -1,0 +1,1 @@
+"""Room availability module."""

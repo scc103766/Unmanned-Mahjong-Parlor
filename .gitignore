@@ -1,0 +1,43 @@
+# === 学习资料（不同步） ===
+agentic-ai/
+hermes-agent/
+scc_agent/
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# === Node ===
+node_modules/
+
+# === IDE ===
+.idea/
+.vscode/
+*.iml
+
+# === 数据库 ===
+*.db
+*.db-journal
+
+# === 环境变量 ===
+.env
+.env.local
+
+# === Codex ===
+.codex-home/
+.codex
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === 小程序 ===
+24h_qipaishi/miniprogram_npm/

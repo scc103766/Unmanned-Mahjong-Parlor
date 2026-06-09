@@ -1,0 +1,1 @@
+"""Group-buy code module."""
