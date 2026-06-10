@@ -43,7 +43,19 @@
 
 ## 快速开始
 
-### 环境要求
+### 从零复现（推荐）
+
+```bash
+git clone https://github.com/scc103766/Unmanned-Mahjong-Parlor.git
+cd Unmanned-Mahjong-Parlor
+chmod +x setup.sh && ./setup.sh
+```
+
+一条命令完成：Python 虚拟环境 → 依赖安装 → 数据库迁移 → API 启动 → 开发 Token 生成。
+
+### 手动搭建
+
+#### 环境要求
 
 - Python 3.11+
 - Node.js 22+
